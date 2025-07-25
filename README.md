@@ -381,15 +381,15 @@ vectorKey: "TiNL5etp1GifX4gsKGzS"
 ```
 - [`eve.js:739:21`](./projects/javascript/eve/src/eve.js)
 ```javascript
-    eve.randColor = function () {
-        let chars = '0123456789ABCDEF'.split(''),
-            color = '#';
+eve.randColor = function () {
+    let chars = '0123456789ABCDEF'.split(''),
+        color = '#';
 
-        for (let i = 0; i < 6; i++)
-            color += chars[Math.floor(Math.random() * 16)];
+    for (let i = 0; i < 6; i++)
+        color += chars[Math.floor(Math.random() * 16)];
 
-        return eve.hexToRgbString(color);
-    };
+    return eve.hexToRgbString(color);
+};
 ```
 
 - [`eve.vectortileconverter.js:1709:1`](./projects/javascript/eve/src/maps/eve.vectortileconverter.js)
