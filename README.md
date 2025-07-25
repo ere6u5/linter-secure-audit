@@ -6,8 +6,9 @@
 
 | Язык           | Инструмент               | Плагины безопасности               |
 |----------------|--------------------------|-------------------------------------|
-| **Python**     | Flake8                   | bandit, bugbear, logging-format     |
-| **JavaScript** | ESLint                   | bandit, bugbear, logging-format     |
+| **Python**     | Flake8                   | `bandit`, `bugbear`, `logging-format`     |
+| **ESLint** | Статический анализ кода | `eslint-plugin-security`, `eslint-plugin-security-node`, `eslint-plugin-no-secrets`, `eslint-plugin-promise` |
+
 
 ### Установка
 
@@ -37,11 +38,12 @@ select =
 
 > Для анализа проекта использовался [`setup.cfg`](./projects/python/setup.cfg)
 
+---
+
 - **JavaScript**: ESLint с дополнительными плагинами
 
 ```bash
 npm init -y
-
 npm install --save-dev \
   eslint@latest \
   @eslint/js \
@@ -51,6 +53,57 @@ npm install --save-dev \
   eslint-plugin-promise \
   @typescript-eslint/eslint-plugin
 ```
+
+Файл конфигурации в версии `>9.0` имеет название `eslint.config.mjs`. Примерная структура файла выглядит так:
+```javascript
+import js from '@eslint/js';
+...
+
+export default [
+  {
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      globals: {
+        node: true,
+        browser: true,
+      },
+    },
+  },
+
+  js.configs.recommended,
+
+  {
+    plugins: {
+      security,
+      'security-node': securityNode,
+      'no-secrets': noSecrets,
+      promise,
+    },
+    rules: {
+        ...
+    },
+  },
+
+  // TypeScript
+  {
+    files: ['**/*.ts', '**/*.tsx'],
+    ...ts.configs['eslint-recommended'],
+    ...ts.configs['recommended'],
+    rules: {
+        ...
+    },
+  },
+
+  // Ignored files
+  {
+    ignores: [
+        ...
+    ],
+  },
+];
+```
+> Для анализа проекта использовался [`eslint.config.mjs`](./projects/javascript/eslint.config.mjs)
 
 ## Анализируемые проекты
 
