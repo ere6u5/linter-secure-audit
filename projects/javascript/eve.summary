@@ -1,0 +1,57 @@
+==============================================
+       ESLINT SECURITY AUDIT SUMMARY
+==============================================
+
+Analyzing directory: .
+
+Legend:
+  Critical Security Risk (CRI)
+  High Risk Issue (HRI)
+  Code Quality Issue (CQI)
+  Best Practice Violation (BP)
+  Other Issues
+
+ CRITICAL SECURITY RISKS (CRI)
+----------------------------------------------
+  Object Injection                                   - 1208
+  Non-literal Resource                               -    4
+  Hardcoded Secret                                   -    3
+  Code Injection                                     -    1
+
+ HIGH RISK ISSUES (HRI)
+----------------------------------------------
+  Undefined Variable                                 -  831
+
+ CODE QUALITY ISSUES (CQI)
+----------------------------------------------
+  Unused Variable                                    -  359
+
+ BEST PRACTICE VIOLATIONS (BP)
+----------------------------------------------
+  Promise Handling                                   -   34
+
+OTHER ISSUES
+----------------------------------------------
+  Undefined document                                 -   97
+  Unreachable code                                   -   34
+  Variable already defined                           -   10
+  Unused variable                                    -  193
+  Undefined window                                   -   19
+  Assignment in conditional                          -    9
+  Object.prototype method access                     -   20
+  File path reported                                 -   45
+  Undefined d3                                       -  749
+  Empty block statement                              -   11
+  Other minor issues                                 -  160
+
+SUMMARY STATS
+----------------------------------------------
+  Critical Security Risks:  1216 (33.5%)
+  High Risk Issues:          831 (22.9%)
+  Code Quality Issues:       359 (9.9%)
+  Best Practice Violations:   34 (0.9%)
+  Other Issues:             1347 (37.1%)
+----------------------------------------------
+  TOTAL ISSUES:             3633
+
+Generated: 2025-07-26 01:24:31
