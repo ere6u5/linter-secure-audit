@@ -1,3 +1,6 @@
 [submodule "projects/python/webob"]
 	path = projects/python/webob
 	url = https://github.com/Pylons/webob
+[submodule "projects/javascript/eve"]
+	path = projects/javascript/eve
+	url = https://github.com/ozdemiri/eve.git
