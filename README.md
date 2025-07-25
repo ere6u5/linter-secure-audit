@@ -7,7 +7,7 @@
 | Язык           | Инструмент               | Плагины безопасности               |
 |----------------|--------------------------|-------------------------------------|
 | **Python**     | Flake8                   | `bandit`, `bugbear`, `logging-format`     |
-| **ESLint** | Статический анализ кода | `eslint-plugin-security`, `eslint-plugin-security-node`, `eslint-plugin-no-secrets`, `eslint-plugin-promise` |
+| **JavaScript** | ESLint | `eslint-plugin-security`, `eslint-plugin-security-node`, `eslint-plugin-no-secrets`, `eslint-plugin-promise` |
 
 В ходе выполнения задания были проанализированы три open-source проекта на разных языках программирования с использованием статических анализаторов кода. Основное внимание уделялось выявлению security-related проблем.
 
