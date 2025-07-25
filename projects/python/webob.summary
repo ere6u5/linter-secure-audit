@@ -1,0 +1,69 @@
+==============================================
+              FLAKE8 AUDIT REPORT
+==============================================
+
+Analyzing directory: ./
+
+===== SECURITY (S) CRITICAL ISSUES =====
+S101 Use of assert detected. The enclosed code will be removed when compiling to optimised byte code. - 2560
+Statement looks unnecessary. -    5
+S603 subprocess call - check for execution of untrusted input. -    2
+S108 Probable insecure usage of temp file/directory. -    2
+S324 Use of weak MD5 hash for security. Consider usedforsecurity=False -    1
+S607 Starting a process with a partial executable path -    1
+S404 Consider possible security implications associated with the subprocess module. -    1
+S311 Standard pseudo-random generators are not suitable for security/cryptographic purposes. -    1
+
+===== BUG RISKS (B) =====
+B028 No explicit stacklevel argument found. The warn method from the warnings module uses a stacklevel of 1 by default. This will only show a stack trace for the line on which the warn method is called. It is therefore recommended to use a stacklevel of 2 or greater to provide more information to the user. -   33
+B010 Do not call setattr with a constant attribute value, it is not any safer than normal property access. -    7
+B015 Result of comparison is not used. This line doesn't do anything. Did you intend to prepend it with assert? -    5
+B009 Do not call getattr with a constant attribute value, it is not any safer than normal property access. -    4
+B036 Don't except `BaseException` unless you plan to re-raise it. -    3
+B023 Function definition does not bind loop variable 'charset'. -    1
+
+===== DOCSTRINGS (D) =====
+D102 Missing docstring in public method - 1057
+D103 Missing docstring in public function -  456
+D400 First line should end with a period -  163
+D202 No blank lines allowed after function docstring -  109
+D101 Missing docstring in public class -   85
+D105 Missing docstring in magic method -   83
+D200 One-line docstring should fit on one line with quotes -   70
+D205 1 blank line required between summary line and description -   67
+D100 Missing docstring in public module -   40
+D107 Missing docstring in __init__ -   34
+D401 First line should be in imperative mood -   16
+D401 First line should be in imperative mood; try rephrasing -   12
+D209 Multi-line docstring closing quotes should be on a separate line -    5
+D412 No blank lines allowed between a section header and its content -    4
+D301 Use r""" if any backslashes in a docstring -    3
+D403 First word of the first line should be properly capitalized -    2
+D104 Missing docstring in public package -    1
+
+===== PIE (P) =====
+PIE781 You are assigning to a variable and then returning. Instead remove the assignment and return. -    8
+PIE786 Use precise exception handlers. -    5
+
+===== OTHER ISSUES =====
+Remove the dict and pass the kwargs directly. -    5
+Return boolean expressions directly instead of returning `True` and `False`. -    4
+'pwd'    -    2
+'seekrit' -    1
+'sekrit!' -    1
+Use isinstance for comparing types. -    1
+'opaque-token' -    1
+Considering using the builtin enum type. -    1
+/ or custom schemes is often unexpected. -    1
+
+===== SUMMARY STATS =====
+Security (S): 2573 issues
+Bug Risks (B):   53 issues
+Docstrings (D): 2207 issues
+Logging (G):    0 issues
+PIE (P):   13 issues
+Other:   17 issues
+==============================
+TOTAL: 4863 issues
+
+Audit completed

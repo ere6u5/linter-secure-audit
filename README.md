@@ -1,93 +1,190 @@
-# linter-secure-audit
+# Отчет по Secure Coding
 
+В ходе выполнения задания были проанализированы три open-source проекта на разных языках программирования с использованием статических анализаторов кода. Основное внимание уделялось выявлению security-related проблем.
 
+## Инструменты
 
-## Getting started
+| Язык       | Инструмент               | Плагины безопасности               |
+|------------|--------------------------|-------------------------------------|
+| **Python** | Flake8                   | bandit, bugbear, logging-format     |
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+### Установка
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/topics/git/add_files/#add-files-to-a-git-repository) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://gitlab.com/ere6u5/linter-secure-audit.git
-git branch -M main
-git push -uf origin main
+- **Python**: Flake8 с дополнительными плагинами
+```bash
+pip install flake8-bandit flake8-bugbear flake8-logging-format flake8-tidy-imports flake8-pie flake8-docstrings
 ```
 
-## Integrate with your tools
+Файл конфигурации может иметь названия `setup.cfg`, `.flake8` или `tox.ini`. Примерная структура файла выглядит так:
 
-- [ ] [Set up project integrations](https://gitlab.com/ere6u5/linter-secure-audit/-/settings/integrations)
+```bash
+[flake8]
+max-line-length = 300
+filename = *.py
 
-## Collaborate with your team
+exclude=
+...
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/user/project/merge_requests/auto_merge/)
+enable-extensions = 
+    G,  # flake8-logging-format
+    S,  # flake8-bandit (security)
+    B,  # flake8-bugbear
 
-## Test and Deploy
+select =
+...
+```
 
-Use the built-in continuous integration in GitLab.
+> Для анализа проекта использовался [`setup.cfg`](./projects/python/setup.cfg)
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+## Анализируемые проекты
 
-***
+### Python/Flake8
 
-# Editing this README
+**WeBob** - библиотека для работы с HTTP-запросами и ответами в Python. Предоставляет объекты-обертки для WSGI-окружения, упрощающие парсинг запросов и формирование ответов.
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+**Ссылка на репозиторий:**
 
-## Suggestions for a good README
+**https://github.com/Pylons/webob**
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+```bash
+git submodule add https://github.com/Pylons/webob ./projects/python/webob
+```
 
-## Name
-Choose a self-explaining name for your project.
+### Анализ безопасности
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+Для удобства проведения аудита был разработан Bash-скрипт [`flake8_audit.sh`](./projects/python/flake8_audit.sh), который:
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+1. Запускает проверку кода
+2. Генерирует структурированный отчёт
+3. Сохраняет результаты в файлы:
+    - `webob.audit` (полные логи)
+    - `webob.summary` (статистика)
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+### Чек-лист из файла [`webob.summary`](./projects/python/webob.summary)
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+| Категория                | Количество  | Уязвимости                          |
+|--------------------------|-------------|-------------------------------------|
+| **Безопасность**         | 2573        |`S101`, `S603`, `S108`, `S324`, `S607`, `S404`, `S311`|
+| **Документация**         | 2207        |`D102`, `D103`, `D400`, `D202`, `D101`, `D105`, `D200`, `D205`, `D100`, `D107`, `D401`, `D209`, `D412`, `D301`, `D403`, `D104`|
+| **Потенциальные ошибки** | 53          |`B028`,`B010`,`B015`,`B009`,`B036`,`B023`       |
+| **Прочие**               | 30          |...                                |
+| **Всего**                | 4863        |
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+### Топ-3 security-проблемы
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+---
+#### S101: Небезопасное использование `assert` для валидации (Production)
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+**Уязвимый код:**
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+- [`response.py:1569-1570:1`](./projects/python/webob/src/webob/response.py)
+```python
+def __init__(self, app_iter, start, stop):
+    assert start >= 0, "Bad start: %r" % start
+    assert stop is None or (stop >= 0 and stop >= start), "Bad stop: %r" % stop
+```
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+- [`response.py:1594:1`](./projects/python/webob/src/webob/response.py)
+```python
+if stop is not None and self._pos > stop:
+    chunk = chunk[: stop - self._pos]
+    assert len(chunk) == stop - start
+```
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+**Суть проблемы:**
+- Использование `assert` для проверки входных параметров и условий в production
+- При использования флага оптимизации - проверки `assert` будут опущены
+- Проблема обнаружена в основном коде(не в тестах)
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+**Оценка риска**
+- Высокий (для production кода с флагом `python -O`)
 
-## License
-For open source projects, say how it is licensed.
+**Потенциальные проблемы:**
+- Критичные ошибки в работе приложения
+- Невалидные данные могут пройти проверку
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+**Рекомендации по исправлению**
+- Использование инструкции `raise` вместо `assert`. Например:
+```python
+if start < 0:
+    raise ValueError(f"Invalid start value: {start}")
+```
+
+**Ссылки**
+
+[CWE-617: Reachable Assertion](https://cwe.mitre.org/data/definitions/617.html)
+
+---
+#### S603: Выполнение произвольных команд (Testing)
+
+**Уязвимый код:**
+
+- [`perfomance_test.py:37:1`](./projects/python/webob/tests/performance_test.py)
+```python
+proc = subprocess.Popen([sys.executable, __file__]) # Исполнение текущего файла
+```
+
+- [`performance_test.py:39:1`](./projects/python/webob/tests/performance_test.py)
+```python
+subprocess.call(["ab", "-n", "1000", "http://localhost:8080/"]) # вызов внешней утилиты
+```
+
+**Суть проблемы:**
+- Прямой вызов субпроцессов с динамическими параметрами
+
+**Оценка риска:**
+- Низкий (используется в тестовом окружении)
+
+**Потенциальные проблемы:**
+- Отсутствие обработки ошибок при отсутствии `ab` в системе
+
+**Потенциальные последствия:**
+- Исполнение произвольного кода (RCE) в тестовом окружении через подмену `__file__`
+
+**Рекомендация:**
+- Использовать Whitelist для разрешенных команд
+- Заменить код на чистый Python. Если в окружении нет явного `ab` - возможны ошибки.
+
+**Ссылки**
+- [CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')](https://cwe.mitre.org/data/definitions/78.html)
+
+---
+#### S108: Небезопасная работа с временными файлами (Testing)
+
+**Уязвимый код:**
+
+- [`perfomance_test.py:10:1`](./projects/python/webob/tests/performance_test.py)
+```python
+log_filename="/tmp/profile.log",
+```
+
+- [`test_static.py:62:1`](./projects/python/webob/tests/test_static.py)
+```python
+app = static.FileApp("/tmp/this/doesnt/exist")
+```
+
+**Суть проблемы:**
+- Использование фиксированных путей `/tmp` без контроля
+
+**Оценка риска:**
+- Низкий (используется тестовое окружение)
+
+**Потенциальные проблемы:**
+- Утечка данных между тестами
+
+**Потенциальные последствия:**
+- Перезапись файлов при параллельном запуске тестов
+
+**Рекомендация:**
+- Исправить в рамках рефакторинга
+
+**Ссылки**
+- [CWE-377: Insecure Temporary File](https://cwe.mitre.org/data/definitions/377.html)
+
+## JavaScript/ESlint
+
+(содержание аудита javascript)
+
+## Ruby/RuboCop
+
+(содержание аудита ruby)
