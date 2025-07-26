@@ -10,6 +10,8 @@
 | **JavaScript** | ESLint | `eslint-plugin-security`, `eslint-plugin-security-node`, `eslint-plugin-no-secrets`, `eslint-plugin-promise` |
 | **Ruby** | RuboCop | `rubocop-security`, `rubocop-thread_safety` |
 
+> Для автоматизации процессов можно написать `pipeline` для сохранения аудитов в виде артефактов, чтобы они сохранялись на 7 дней
+
 ### Установка
 
 - **Python**: Flake8 с дополнительными плагинами
