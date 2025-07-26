@@ -1,0 +1,93 @@
+==============================================
+              RUBOCOP AUDIT REPORT
+==============================================
+
+Analyzing directory: .
+
+===== SECURITY ISSUES =====
+Security/Eval                                 -    1
+
+===== LINT ISSUES =====
+Lint/MissingSuper                             -    1
+Lint/EmptyFile                                -    1
+
+===== METRICS ISSUES =====
+Metrics/MethodLength                          -    8
+Metrics/BlockLength                           -    5
+
+===== STYLE ISSUES =====
+Style/StringLiterals                          -  205
+Style/FrozenStringLiteralComment              -   69
+Style/WordArray                               -    4
+Style/GlobalStdStream                         -    3
+Style/HashAsLastArrayItem                     -    3
+Style/RedundantFetchBlock                     -    3
+Style/MixinUsage                              -    2
+Style/PreferredHashMethods                    -    2
+Style/StderrPuts                              -    2
+Style/IfUnlessModifier                        -    2
+Style/PercentLiteralDelimiters                -    2
+Style/GuardClause                             -    1
+Style/NumericLiterals                         -    1
+Style/RedundantReturn                         -    1
+Style/ExpandPathArguments                     -    1
+Style/Lambda                                  -    1
+Style/RedundantBegin                          -    1
+
+===== LAYOUT ISSUES =====
+Layout/LineLength                             -   14
+Layout/ArgumentAlignment                      -    4
+Layout/SpaceInsideArrayLiteralBrackets        -    4
+Layout/TrailingEmptyLines                     -    3
+Layout/TrailingWhitespace                     -    3
+Layout/EmptyLinesAroundBlockBody              -    2
+Layout/SpaceBeforeFirstArg                    -    2
+Layout/ExtraSpacing                           -    2
+Layout/SpaceInLambdaLiteral                   -    1
+Layout/SpaceInsideParens                      -    1
+Layout/EmptyLines                             -    1
+
+===== RSPEC ISSUES =====
+RSpec/ExampleLength                           -  107
+RSpec/MultipleExpectations                    -   76
+RSpec/ExpectChange                            -   15
+RSpec/NamedSubject                            -    8
+RSpec/DescribedClass                          -    5
+RSpec/ImplicitSubject                         -    4
+RSpec/ContextWording                          -    3
+RSpec/SpecFilePathFormat                      -    3
+RSpec/EmptyExampleGroup                       -    2
+RSpec/BeEq                                    -    2
+RSpec/ImplicitExpect                          -    1
+RSpec/HookArgument                            -    1
+RSpec/AnyInstance                             -    1
+RSpec/LeadingSubject                          -    1
+
+===== RAILS ISSUES =====
+Rails/FilePath                                -    7
+Rails/FindEach                                -    3
+Rails/OutputSafety                            -    2
+Rails/HasManyOrHasOneDependent                -    1
+Rails/TimeZone                                -    1
+
+===== PERFORMANCE ISSUES =====
+Performance/RegexpMatch                       -    1
+
+===== THREAD SAFETY ISSUES =====
+ThreadSafety/ClassInstanceVariable            -    6
+ThreadSafety/DirChdir                         -    3
+
+===== SUMMARY STATS =====
+Security Issues           -    1 (0.2%)
+Lint Issues               -    2 (0.3%)
+Metrics Issues            -   13 (2.1%)
+Style Issues              -  303 (49.8%)
+Layout Issues             -   37 (6.1%)
+RSpec Issues              -  229 (37.6%)
+Rails Issues              -   14 (2.3%)
+Performance Issues        -    1 (0.2%)
+Thread Safety Issues      -    9 (1.5%)
+==============================
+TOTAL:  609 issues
+
+Audit completed: 2025-07-26 17:15:35
