@@ -1,0 +1,175 @@
+plugins:
+  - rubocop-rails
+  - rubocop-performance
+  - rubocop-rspec
+  - rubocop-md
+  - rubocop-thread_safety
+  - rubocop-erb
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.2
+  DisplayCopNames: true
+  SuggestExtensions: false
+  DisabledByDefault: false
+  Include:
+    - '**/*.rb'
+    - '**/*.erb'
+    - '**/*.md'
+    - '**/*.gemspec'
+    - '**/*.rake'
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'bin/**/*'
+    - 'vendor/**/*'
+    - 'node_modules/**/*'
+
+# Markdown configuration
+Markdown:
+  Enabled: true
+
+Layout/LineLength:
+  Enabled: true
+  Max: 120
+  Include:
+    - '**/*.md'
+
+# ERB configuration
+Layout/IndentationWidth:
+  Enabled: true
+  EnforcedStyle: spaces
+  Width: 2
+  Include:
+    - '**/*.erb'
+
+# Security rules
+Security:
+  Enabled: true
+
+Security/Eval:
+  Enabled: true
+  Severity: error
+
+Security/MarshalLoad:
+  Enabled: true
+  Severity: error
+
+Security/Open:
+  Enabled: true
+  Severity: error
+
+Security/YAMLLoad:
+  Enabled: true
+  Severity: error
+
+Security/CompoundHash:
+  Enabled: true
+
+Security/JSONLoad:
+  Enabled: true
+
+Security/IoMethods:
+  Enabled: true
+
+# Rails security rules
+Rails:
+  Enabled: true
+
+Rails/OutputSafety:
+  Enabled: true
+  Severity: error
+
+Rails/ContentTag:
+  Enabled: true
+
+Rails/UniqBeforePluck:
+  Enabled: true
+
+Rails/SkipsModelValidations:
+  Enabled: true
+  Severity: warning
+
+Rails/Output:
+  Enabled: true
+
+Rails/ActiveRecordOverride:
+  Enabled: true
+
+Rails/ApplicationController:
+  Enabled: true
+
+Rails/DefaultScope:
+  Enabled: true
+
+# Additional security checks
+Rails/SafeNavigationWithBlank:
+  Enabled: true
+
+Rails/Blank:
+  Enabled: true
+
+Rails/Present:
+  Enabled: true
+
+# Performance rules
+Performance:
+  Enabled: true
+
+Performance/RedundantMerge:
+  Enabled: true
+
+Performance/ReverseEach:
+  Enabled: true
+
+Performance/Size:
+  Enabled: true
+
+# Linting rules
+Lint:
+  Enabled: true
+
+Lint/AmbiguousOperator:
+  Enabled: true
+
+Lint/DeprecatedClassMethods:
+  Enabled: true
+
+Lint/DuplicateMethods:
+  Enabled: true
+
+Lint/NonDeterministicRequireOrder:
+  Enabled: true
+
+Lint/SafeNavigationChain:
+  Enabled: true
+
+Lint/SuppressedException:
+  Enabled: true
+  Severity: warning
+
+Lint/UnreachableCode:
+  Enabled: true
+
+Lint/MissingSuper:
+  Enabled: true
+
+Lint/DuplicateBranch:
+  Enabled: true
+
+# Style rules
+Style/HashExcept:
+  Enabled: true
+
+Style/NegatedIfElseCondition:
+  Enabled: true
+
+Style/RedundantArgument:
+  Enabled: true
+
+Lint/NonLocalExitFromIterator:
+  Enabled: true
+
+Style/ExplicitBlockArgument:
+  Enabled: true

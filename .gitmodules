@@ -4,3 +4,6 @@
 [submodule "projects/javascript/eve"]
 	path = projects/javascript/eve
 	url = https://github.com/ozdemiri/eve.git
+[submodule "projects/ruby/evally"]
+	path = projects/ruby/evally
+	url = https://github.com/mjjar/evally.git

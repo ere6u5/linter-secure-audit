@@ -1,0 +1,728 @@
+== evally/app/controllers/v2/drafts_controller.rb ==
+C: 82: 54: [Correctable] Style/HashAsLastArrayItem: Wrap hash in { and }.
+== evally/app/controllers/v2/templates_controller.rb ==
+C: 79: 61: [Correctable] Style/HashAsLastArrayItem: Wrap hash in { and }.
+C: 86: 61: [Correctable] Style/HashAsLastArrayItem: Wrap hash in { and }.
+== evally/app/models/employee.rb ==
+C: 10:  3: Rails/HasManyOrHasOneDependent: Specify a :dependent option.
+== evally/app/models/user.rb ==
+C: 40:  5: [Correctable] Style/RedundantReturn: Redundant return detected.
+== evally/app/queries/v2/employees_search_query.rb ==
+C:  6:  7: ThreadSafety/ClassInstanceVariable: Avoid class instance variables.
+C: 57: 45: ThreadSafety/ClassInstanceVariable: Avoid class instance variables.
+C: 63: 55: ThreadSafety/ClassInstanceVariable: Avoid class instance variables.
+C: 70: 45: ThreadSafety/ClassInstanceVariable: Avoid class instance variables.
+C: 74: 49: ThreadSafety/ClassInstanceVariable: Avoid class instance variables.
+C: 78: 52: ThreadSafety/ClassInstanceVariable: Avoid class instance variables.
+== evally/app/services/error_responder_service.rb ==
+W:  6:  3: Lint/MissingSuper: Call super to initialize state of the parent class.
+== evally/app/views/layouts/application.html.erb ==
+C: 14: 33: [Correctable] Layout/ExtraSpacing: Unnecessary spacing detected.
+C: 14: 33: [Correctable] Layout/SpaceBeforeFirstArg: Put one space between the method name and the first argument.
+C: 16: 28: [Correctable] Layout/ExtraSpacing: Unnecessary spacing detected.
+C: 16: 28: [Correctable] Layout/SpaceBeforeFirstArg: Put one space between the method name and the first argument.
+== evally/app/views/users/mailer/invitation_instructions.html.erb ==
+C: 13:109: Rails/OutputSafety: Tagging a string as html safe may be a security risk.
+== evally/app/views/users/mailer/reset_password_instructions.html.erb ==
+C: 13:115: Rails/OutputSafety: Tagging a string as html safe may be a security risk.
+== evally/bin/bundle ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/bin/rails ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/bin/rake ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/bin/setup ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C:  3:  1: Style/MixinUsage: include is used at the top level. Use inside class or module.
+== evally/bin/spring ==
+C: 11:  9: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 12:  5: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 12: 44: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 13:  3: [Correctable] Layout/ArgumentAlignment: Align the arguments of a method call if they span more than one line.
+C: 15: 23: [Correctable] Style/ExpandPathArguments: Use expand_path('bundle', __dir__) instead of expand_path('../bundle', __FILE__).
+C: 15: 35: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 18:  6: [Correctable] Performance/RegexpMatch: Use match? instead of =~ when MatchData is not used.
+C: 26:  9: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 27:  9: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 29: 19: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 29: 29: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+== evally/bin/update ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C:  3:  1: Style/MixinUsage: include is used at the top level. Use inside class or module.
+== evally/bin/webpack ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C:  3:  5: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:  3: 26: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:  3: 41: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:  4:  5: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:  4: 22: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:  6:  9: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:  7:  5: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:  7: 44: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:  8:  3: [Correctable] Layout/ArgumentAlignment: Align the arguments of a method call if they span more than one line.
+C: 10:  9: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 11:  9: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 13:  9: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 14:  9: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 16: 29: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 17:  1: ThreadSafety/DirChdir: Avoid using Dir.chdir due to its process-wide effect.
+== evally/bin/webpack-dev-server ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C:  3:  5: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:  3: 26: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:  3: 41: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:  4:  5: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:  4: 22: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:  6:  9: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:  7:  5: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:  7: 44: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:  8:  3: [Correctable] Layout/ArgumentAlignment: Align the arguments of a method call if they span more than one line.
+C: 10:  9: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 11:  9: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 13:  9: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 14:  9: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 16: 29: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 17:  1: ThreadSafety/DirChdir: Avoid using Dir.chdir due to its process-wide effect.
+== evally/bin/yarn ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C:  3:  1: ThreadSafety/DirChdir: Avoid using Dir.chdir due to its process-wide effect.
+C:  4:  3: [Correctable] Style/RedundantBegin: Redundant begin block detected.
+C:  5: 10: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:  7:  5: [Correctable] Style/StderrPuts: Use warn instead of $stderr.puts to allow such output to be disabled.
+C:  7: 18: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:  8:  5: [Correctable] Style/StderrPuts: Use warn instead of $stderr.puts to allow such output to be disabled.
+C:  8: 18: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+== evally/config/application.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C:  3:  9: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:  5:  9: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:  6:  9: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:  7:  9: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:  8:  9: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:  9:  9: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 10:  9: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 11:  9: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 12:  9: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 13:  9: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 39: 32: [Correctable] Rails/FilePath: Prefer Rails.root.join('path/to').
+C: 40: 32: [Correctable] Rails/FilePath: Prefer Rails.root.join('path/to').
+C: 41: 32: [Correctable] Rails/FilePath: Prefer Rails.root.join('path/to').
+C: 42: 32: [Correctable] Rails/FilePath: Prefer Rails.root.join('path/to').
+== evally/config/boot.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/config/environment.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/config/environments/development.rb ==
+C:  1:  1: Metrics/BlockLength: Block has too many lines. [26/25]
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C: 19:  6: [Correctable] Rails/FilePath: Prefer Rails.root.join('path/to').
+C: 64: 45: [Correctable] Style/GlobalStdStream: Use $stdout instead of STDOUT.
+== evally/config/environments/production.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C: 34:101: Layout/LineLength: Line is too long. [102/100]
+C: 59: 22: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Do not use space inside array brackets.
+C: 59: 34: Layout/SpaceInsideArrayLiteralBrackets: Do not use space inside array brackets.
+C: 88: 10: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 89: 50: [Correctable] Style/GlobalStdStream: Use $stdout instead of STDOUT.
+== evally/config/environments/staging.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C: 34:101: Layout/LineLength: Line is too long. [102/100]
+C: 59: 22: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Do not use space inside array brackets.
+C: 59: 34: Layout/SpaceInsideArrayLiteralBrackets: Do not use space inside array brackets.
+C: 88: 10: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 89: 50: [Correctable] Style/GlobalStdStream: Use $stdout instead of STDOUT.
+== evally/config/environments/test.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/config/initializers/active_record_enum.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C:  7:  9: [Correctable] Style/GuardClause: Use a guard clause (return if value.blank? || mapping.has_key?(value) || mapping.has_value?(value)) instead of wrapping the code inside a conditional expression.
+C:  7:  9: [Correctable] Style/IfUnlessModifier: Favor modifier unless usage when having a single-line body. Another good alternative is the usage of control flow &&/||.
+C:  7: 40: [Correctable] Style/PreferredHashMethods: Use Hash#key? instead of Hash#has_key?.
+C:  7: 67: [Correctable] Style/PreferredHashMethods: Use Hash#value? instead of Hash#has_value?.
+C: 13:  4: [Correctable] Layout/TrailingEmptyLines: Final newline missing.
+== evally/config/initializers/application_controller_renderer.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/config/initializers/assets.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/config/initializers/backtrace_silencers.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/config/initializers/blueprinter.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C:  2: 30: [Correctable] Layout/SpaceInLambdaLiteral: Do not use spaces between -> and ( in lambda literals.
+== evally/config/initializers/content_security_policy.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C: 29:109: [Correctable] Layout/LineLength: Line is too long. [128/100]
+C: 31:  4: [Correctable] Layout/TrailingEmptyLines: Final newline missing.
+== evally/config/initializers/cookies_serializer.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/config/initializers/cors.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C:  5:  7: [Correctable] Layout/ArgumentAlignment: Align the arguments of a method call if they span more than one line.
+C:  6: 16: [Correctable] Style/PercentLiteralDelimiters: %i-literals should be delimited by [ and ].
+== evally/config/initializers/cypress_on_rails.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C:  5:101: Layout/LineLength: Line is too long. [106/100]
+== evally/config/initializers/datetime_formats.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C:  1: 32: [Correctable] Style/Lambda: Use the -> { ... } lambda literal syntax for single line lambdas.
+== evally/config/initializers/devise.rb ==
+C: 17:101: Layout/LineLength: Line is too long. [154/100]
+C:123:101: Layout/LineLength: Line is too long. [150/100]
+C:343:101: Layout/LineLength: Line is too long. [116/100]
+== evally/config/initializers/filter_parameter_logging.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/config/initializers/inflections.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/config/initializers/mime_types.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/config/initializers/wrap_parameters.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/config/puma.rb ==
+C:  9: 21: [Correctable] Style/RedundantFetchBlock: Use fetch('RAILS_MAX_THREADS', 5) instead of fetch('RAILS_MAX_THREADS') { 5 }.
+C: 14: 17: [Correctable] Style/RedundantFetchBlock: Use fetch('PORT', 3000) instead of fetch('PORT') { 3000 }.
+C: 18: 17: [Correctable] Style/RedundantFetchBlock: Use fetch('RAILS_ENV', 'development') instead of fetch('RAILS_ENV') { 'development' }.
+== evally/config/routes.rb ==
+C:  1:  1: Metrics/BlockLength: Block has too many lines. [37/25]
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C:  5:  3: Metrics/BlockLength: Block has too many lines. [34/25]
+== evally/db/cypress_seeds.rb ==
+W:  1:  1: Lint/EmptyFile: Empty file detected.
+== evally/db/migrate/20180907122523_create_users.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20180924182150_create_employees.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C:  2:  3: Metrics/MethodLength: Method has too many lines. [11/10]
+== evally/db/migrate/20180930173208_create_templates.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20180930190425_create_sections.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20181019124154_create_evaluations.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20181021115928_add_template_name_to_evaluations.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20181026195910_remove_unnecessary_columns.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20181030201031_add_public_token_to_employee.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20181108201052_create_activities.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20181118113050_add_state_and_released_at_to_employees.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20181120202606_create_settings.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20181208230505_add_lang_to_settings.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20190128203158_add_group_to_employees.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20190203132701_change_section_skills_type_to_jsonb.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C:  3:  1: [Correctable] Layout/TrailingWhitespace: Trailing whitespace detected.
+== evally/db/migrate/20191005190731_add_position_set_at_to_employees.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20191005193204_create_position_changes.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20191220215102_improve_evaluations.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C:  2:  3: Metrics/MethodLength: Method has too many lines. [15/10]
+C: 22:  3: Metrics/MethodLength: Method has too many lines. [15/10]
+== evally/db/migrate/20191220215351_improve_employees.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C:  2:  3: Metrics/MethodLength: Method has too many lines. [21/10]
+C: 29:  3: Metrics/MethodLength: Method has too many lines. [21/10]
+== evally/db/migrate/20200204090757_improve_sections.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C:  2:  3: Metrics/MethodLength: Method has too many lines. [27/10]
+C: 35:  3: Metrics/MethodLength: Method has too many lines. [27/10]
+== evally/db/migrate/20200211092946_change_hired_at_column_in_employees.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20200213191943_remove_state_from_templates.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20200213192719_change_next_evaluation_at_column_in_employees.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20200213213546_rename_position_set_at_column_in_employees.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20200213214447_rename_changed_at_column_in_position_changes.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20200214165250_add_role_to_users.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20200215144302_add_status_to_users.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20200215145012_add_trackable_to_users.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20200216122713_add_invitable_to_users.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20200217132225_rename_user_id_in_employees.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20200218193223_rename_user_reference_in_templates.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20200219083722_add_recoverable_to_users.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20200219143022_add_archived_at_to_employees.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20200221204531_add_devise_to_users.rb ==
+C:  4:  3: Metrics/MethodLength: Method has too many lines. [11/10]
+C: 15: 14: [Correctable] Rails/FindEach: Use find_each instead of each.
+C: 59:101: Layout/LineLength: Line is too long. [106/100]
+C: 63:  1: [Correctable] Layout/EmptyLines: Extra blank line detected.
+C: 75:101: Layout/LineLength: Line is too long. [101/100]
+C: 76:101: Layout/LineLength: Line is too long. [105/100]
+== evally/db/migrate/20200222205622_devise_invitable_add_to_users.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/migrate/20200223105327_remove_password_digest_from_users.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C:  9: 14: [Correctable] Rails/FindEach: Use find_each instead of each.
+C:  9: 67: [Correctable] Layout/SpaceInsideParens: Space inside parentheses detected.
+== evally/db/migrate/20200223113108_remove_auth_tokens_from_users.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+== evally/db/schema.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C: 13:  1: Metrics/BlockLength: Block has too many lines. [123/25]
+C: 13: 38: [Correctable] Style/NumericLiterals: Use underscores(_) as thousands separator and separate every 3 digits with them.
+C: 14:  1: [Correctable] Layout/EmptyLinesAroundBlockBody: Extra empty line detected at block body beginning.
+C: 16: 20: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 18: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 19: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 20: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 21: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 22: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 23: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 24: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 25: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 26: 13: [Correctable] Style/WordArray: Use %w or %W for an array of words.
+C: 26: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 26: 32: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 26: 55: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 26:101: [Correctable] Layout/LineLength: Line is too long. [107/100]
+C: 27: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 27: 32: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 30: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 31: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 32: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 33: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 34: 12: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 35: 12: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 36: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 37: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 38: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 39: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 40: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 40: 32: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 41: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 42: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 42: 32: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 43: 12: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 44: 12: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 45: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 45: 37: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 46: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 46: 30: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 47: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 47: 34: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 48: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 48: 37: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 49: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 49: 30: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 52: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 53: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 54: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 54: 32: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 55: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 56: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 57: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 58: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 59: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 59: 36: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 60: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 60: 30: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 63: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 64: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 65: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 66: 12: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 67: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 68: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 69: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 70: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 70: 36: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 73: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 74: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 75: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 76: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 77: 15: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 78: 13: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 79: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 80: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 81: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 82: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 83: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 83: 29: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 84: 13: [Correctable] Style/WordArray: Use %w or %W for an array of words.
+C: 84: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 84: 34: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 84: 59: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 84:101: [Correctable] Layout/LineLength: Line is too long. [113/100]
+C: 87: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 88: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 89: 15: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 90: 15: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 91: 15: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 92: 15: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 93: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 94: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 95: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 95: 31: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 96: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 96: 32: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C: 99: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:100: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:101: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:102: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:103: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:104: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:104: 35: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:105: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:105: 29: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:108:  3: Metrics/BlockLength: Block has too many lines. [31/25]
+C:108: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:109: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:110: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:111: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:112: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:113: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:114: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:114: 31: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:115: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:115: 33: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:116: 12: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:117: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:118: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:119: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:120: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:121: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:122: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:123: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:124: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:125: 15: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:126: 16: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:127: 12: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:128: 15: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:129: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:130: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:131: 15: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:132: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:132: 30: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:133: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:133: 41: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:134: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:134: 42: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:135: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:135: 38: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:136: 13: [Correctable] Style/WordArray: Use %w or %W for an array of words.
+C:136: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:136: 33: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:136: 57: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:136:101: [Correctable] Layout/LineLength: Line is too long. [106/100]
+C:137: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:137: 45: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:138: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:138: 29: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:139: 14: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:139: 31: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:142: 19: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:142: 33: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:143: 19: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:143: 32: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:143: 49: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:144: 19: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:144: 34: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:145: 19: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:145: 39: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:146: 19: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:146: 31: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:147: 19: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:147: 32: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:147: 49: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+== evally/db/seeds.rb ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C: 28: 54: [Correctable] Rails/TimeZone: Do not use Time.now without zone. Use one of Time.zone.now, Time.current, Time.now.in_time_zone, Time.now.utc, Time.now.getlocal, Time.now.xmlschema, Time.now.iso8601, Time.now.jisx0301, Time.now.rfc3339, Time.now.httpdate, Time.now.to_i, Time.now.to_f instead.
+== evally/lib/tasks/add_need_to_improve_to_skills.rake ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C:  2:  8: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+C:  3:  1: [Correctable] Layout/TrailingWhitespace: Trailing whitespace detected.
+C:  5:  1: [Correctable] Layout/TrailingWhitespace: Trailing whitespace detected.
+C:  6: 26: [Correctable] Style/WordArray: Use %w or %W for an array of words.
+C:  6: 46: [Correctable] Rails/FindEach: Use find_each instead of each.
+C:  8: 83: [Correctable] Style/IfUnlessModifier: Modifier form of if makes the line too long.
+C:  8:101: [Correctable] Layout/LineLength: Line is too long. [113/100]
+C: 11:  1: [Correctable] Layout/EmptyLinesAroundBlockBody: Extra empty line detected at block body end.
+C: 13:  4: [Correctable] Layout/TrailingEmptyLines: Final newline missing.
+== evally/lib/tasks/default.rake ==
+C:  1:  1: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+C:  1:  4: [Correctable] Style/PercentLiteralDelimiters: %w-literals should be delimited by [ and ].
+== evally/spec/controllers/pages_controller_spec.rb ==
+C:  5:  1: [Correctable] RSpec/EmptyExampleGroup: Empty example group detected.
+== evally/spec/controllers/v2/browse/employees_controller_spec.rb ==
+C:  7:  5: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+== evally/spec/controllers/v2/browse/evaluations_controller_spec.rb ==
+C:  7:  5: RSpec/ExampleLength: Example has too many lines. [6/5]
+C:  7:  5: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+== evally/spec/controllers/v2/dashboard_controller_spec.rb ==
+C: 18:  7: RSpec/ExampleLength: Example has too many lines. [6/5]
+C: 18:  7: RSpec/MultipleExpectations: Example has too many expectations [4/1].
+== evally/spec/controllers/v2/drafts_controller_spec.rb ==
+C: 18:  7: RSpec/ExampleLength: Example has too many lines. [6/5]
+C: 18:  7: RSpec/MultipleExpectations: Example has too many expectations [4/1].
+C: 50:  7: RSpec/ExampleLength: Example has too many lines. [6/5]
+C: 50:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C: 72:  7: RSpec/ExampleLength: Example has too many lines. [8/5]
+C: 85:  7: RSpec/ExampleLength: Example has too many lines. [12/5]
+C:106:  7: RSpec/ExampleLength: Example has too many lines. [15/5]
+C:106:  7: RSpec/MultipleExpectations: Example has too many expectations [3/1].
+C:123: 16: [Correctable] RSpec/ExpectChange: Prefer change(Evaluation, :count).
+C:129:  7: RSpec/ExampleLength: Example has too many lines. [14/5]
+C:129:  7: RSpec/MultipleExpectations: Example has too many expectations [3/1].
+C:144: 16: [Correctable] RSpec/ExpectChange: Prefer change(Evaluation, :count).
+C:150:  7: RSpec/ExampleLength: Example has too many lines. [12/5]
+C:150:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:168:  7: RSpec/ExampleLength: Example has too many lines. [11/5]
+C:168:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:185:  7: RSpec/ExampleLength: Example has too many lines. [11/5]
+C:185:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:202:  7: RSpec/ExampleLength: Example has too many lines. [14/5]
+C:202:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:227:  7: RSpec/ExampleLength: Example has too many lines. [13/5]
+C:245:  7: RSpec/ExampleLength: Example has too many lines. [16/5]
+C:269:  7: RSpec/ExampleLength: Example has too many lines. [25/5]
+C:269:  7: RSpec/MultipleExpectations: Example has too many expectations [3/1].
+C:301:  7: RSpec/ExampleLength: Example has too many lines. [27/5]
+C:301:  7: RSpec/MultipleExpectations: Example has too many expectations [3/1].
+C:335:  7: RSpec/ExampleLength: Example has too many lines. [21/5]
+C:335:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:383:  7: RSpec/ExampleLength: Example has too many lines. [7/5]
+C:383:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+== evally/spec/controllers/v2/employees_controller_spec.rb ==
+C: 18:  7: RSpec/MultipleExpectations: Example has too many expectations [3/1].
+C: 39:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C: 60:  7: RSpec/ExampleLength: Example has too many lines. [12/5]
+C: 76:  7: RSpec/ExampleLength: Example has too many lines. [13/5]
+C: 96:  7: RSpec/ExampleLength: Example has too many lines. [16/5]
+C: 96:  7: RSpec/MultipleExpectations: Example has too many expectations [3/1].
+C:112: 16: [Correctable] RSpec/ExpectChange: Prefer change(Employee, :count).
+C:118:  7: RSpec/ExampleLength: Example has too many lines. [18/5]
+C:118:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:134: 16: [Correctable] RSpec/ExpectChange: Prefer change(Activity, :count).
+C:142:  7: RSpec/ExampleLength: Example has too many lines. [13/5]
+C:142:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:165:  7: RSpec/ExampleLength: Example has too many lines. [8/5]
+C:178:  7: RSpec/ExampleLength: Example has too many lines. [9/5]
+C:194:  7: RSpec/ExampleLength: Example has too many lines. [11/5]
+C:194:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:211:  7: RSpec/ExampleLength: Example has too many lines. [17/5]
+C:211:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:235:  7: RSpec/ExampleLength: Example has too many lines. [15/5]
+C:235:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:249: 16: [Correctable] RSpec/ExpectChange: Prefer change(Activity, :count).
+C:257:  7: RSpec/ExampleLength: Example has too many lines. [11/5]
+C:257:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:275:  7: RSpec/ExampleLength: Example has too many lines. [9/5]
+C:300:  7: RSpec/ExampleLength: Example has too many lines. [24/5]
+C:300:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:342:  7: RSpec/ExampleLength: Example has too many lines. [38/5]
+C:342:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:391:  7: RSpec/ExampleLength: Example has too many lines. [10/5]
+C:391:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:424:  7: RSpec/ExampleLength: Example has too many lines. [35/5]
+C:424:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:468:  7: RSpec/ExampleLength: Example has too many lines. [12/5]
+C:468:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:503:  7: RSpec/ExampleLength: Example has too many lines. [20/5]
+C:503:  7: RSpec/MultipleExpectations: Example has too many expectations [4/1].
+C:532:  7: RSpec/ExampleLength: Example has too many lines. [12/5]
+C:532:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:551:  7: RSpec/ExampleLength: Example has too many lines. [13/5]
+C:551:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:589:  7: RSpec/ExampleLength: Example has too many lines. [6/5]
+C:589:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:596: 16: [Correctable] RSpec/ExpectChange: Prefer change(Employee, :count).
+C:601:  7: RSpec/ExampleLength: Example has too many lines. [9/5]
+C:601:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:608: 16: [Correctable] RSpec/ExpectChange: Prefer change(Activity, :count).
+C:642:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+== evally/spec/controllers/v2/evaluations_controller_spec.rb ==
+C: 28:  7: RSpec/ExampleLength: Example has too many lines. [6/5]
+C: 28:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+== evally/spec/controllers/v2/invitations_controller_spec.rb ==
+C: 11:  7: RSpec/ExampleLength: Example has too many lines. [10/5]
+C: 25:  7: RSpec/ExampleLength: Example has too many lines. [11/5]
+C: 43:  7: RSpec/ExampleLength: Example has too many lines. [14/5]
+C: 43:  7: RSpec/MultipleExpectations: Example has too many expectations [3/1].
+C: 57: 16: [Correctable] RSpec/ExpectChange: Prefer change(User, :count).
+C: 63:  7: RSpec/ExampleLength: Example has too many lines. [13/5]
+C: 63:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C: 82:  7: RSpec/ExampleLength: Example has too many lines. [16/5]
+C: 82:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C: 96: 16: [Correctable] RSpec/ExpectChange: Prefer change(Activity, :count).
+C:104:  7: RSpec/ExampleLength: Example has too many lines. [11/5]
+C:104:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:123:  5: RSpec/ExampleLength: Example has too many lines. [13/5]
+C:123:  5: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:142:  5: RSpec/ExampleLength: Example has too many lines. [11/5]
+C:158:  5: RSpec/ExampleLength: Example has too many lines. [16/5]
+C:179:  5: RSpec/ExampleLength: Example has too many lines. [14/5]
+C:179:  5: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:199:  5: RSpec/ExampleLength: Example has too many lines. [14/5]
+C:199:  5: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+== evally/spec/controllers/v2/passwords_controller_spec.rb ==
+C: 16:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C: 26:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C: 38:  9: RSpec/AnyInstance: Avoid stubbing using allow_any_instance_of.
+C: 49:  7: RSpec/ExampleLength: Example has too many lines. [9/5]
+C: 65:  7: RSpec/ExampleLength: Example has too many lines. [17/5]
+C: 65:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C: 88:  7: RSpec/ExampleLength: Example has too many lines. [15/5]
+== evally/spec/controllers/v2/profile_controller_spec.rb ==
+C: 17:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C: 30:  7: RSpec/ExampleLength: Example has too many lines. [7/5]
+C: 43:  7: RSpec/ExampleLength: Example has too many lines. [12/5]
+C: 43:  7: RSpec/MultipleExpectations: Example has too many expectations [3/1].
+C: 61:  7: RSpec/ExampleLength: Example has too many lines. [9/5]
+C: 61:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C: 79:  7: RSpec/ExampleLength: Example has too many lines. [9/5]
+C: 95:  7: RSpec/ExampleLength: Example has too many lines. [12/5]
+C: 95:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:113:  7: RSpec/ExampleLength: Example has too many lines. [13/5]
+C:113:  7: RSpec/MultipleExpectations: Example has too many expectations [3/1].
+C:132:  7: RSpec/ExampleLength: Example has too many lines. [15/5]
+C:132:  7: RSpec/MultipleExpectations: Example has too many expectations [3/1].
+C:153:  7: RSpec/ExampleLength: Example has too many lines. [13/5]
+C:153:  7: RSpec/MultipleExpectations: Example has too many expectations [3/1].
+== evally/spec/controllers/v2/session_controller_spec.rb ==
+C:  7:  5: RSpec/ExampleLength: Example has too many lines. [11/5]
+C:  7:  5: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C: 24:  5: RSpec/ExampleLength: Example has too many lines. [8/5]
+C: 36:  5: RSpec/ExampleLength: Example has too many lines. [9/5]
+C: 50:  5: RSpec/ExampleLength: Example has too many lines. [14/5]
+== evally/spec/controllers/v2/settings_controller_spec.rb ==
+C: 10:  7: RSpec/ExampleLength: Example has too many lines. [7/5]
+C: 24:  7: RSpec/ExampleLength: Example has too many lines. [12/5]
+C: 24:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C: 41:  7: RSpec/ExampleLength: Example has too many lines. [9/5]
+C: 41:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+== evally/spec/controllers/v2/templates_controller_spec.rb ==
+C: 18:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C: 37:  7: RSpec/ExampleLength: Example has too many lines. [6/5]
+C: 37:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C: 59:  7: RSpec/ExampleLength: Example has too many lines. [8/5]
+C: 74:  7: RSpec/ExampleLength: Example has too many lines. [25/5]
+C: 74:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:100: 16: [Correctable] RSpec/ExpectChange: Prefer change(Template, :count).
+C:100: 52: [Correctable] RSpec/ExpectChange: Prefer change(Section, :count).
+C:105:  7: RSpec/ExampleLength: Example has too many lines. [24/5]
+C:105:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:138:  7: RSpec/ExampleLength: Example has too many lines. [8/5]
+C:151:  7: RSpec/ExampleLength: Example has too many lines. [10/5]
+C:169:  7: RSpec/ExampleLength: Example has too many lines. [18/5]
+C:169:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:193:  7: RSpec/ExampleLength: Example has too many lines. [17/5]
+C:216:  7: RSpec/ExampleLength: Example has too many lines. [22/5]
+C:216:  7: RSpec/MultipleExpectations: Example has too many expectations [3/1].
+C:245:  7: RSpec/ExampleLength: Example has too many lines. [20/5]
+C:245:  7: RSpec/MultipleExpectations: Example has too many expectations [3/1].
+C:272:  7: RSpec/ExampleLength: Example has too many lines. [15/5]
+C:312:  7: RSpec/ExampleLength: Example has too many lines. [7/5]
+C:312:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:320: 16: [Correctable] RSpec/ExpectChange: Prefer change(Template, :count).
+C:320: 53: [Correctable] RSpec/ExpectChange: Prefer change(Section, :count).
+C:325:  7: RSpec/ExampleLength: Example has too many lines. [6/5]
+C:325:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:332: 16: [Correctable] RSpec/ExpectChange: Prefer change(Template, :count).
+== evally/spec/controllers/v2/users_controller_spec.rb ==
+C: 36:  7: RSpec/ExampleLength: Example has too many lines. [8/5]
+C: 49:  7: RSpec/ExampleLength: Example has too many lines. [9/5]
+C: 65:  7: RSpec/ExampleLength: Example has too many lines. [11/5]
+C: 65:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C: 82:  7: RSpec/ExampleLength: Example has too many lines. [15/5]
+C: 82:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C: 96: 16: [Correctable] RSpec/ExpectChange: Prefer change(Activity, :count).
+C:104:  7: RSpec/ExampleLength: Example has too many lines. [11/5]
+C:104:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C:122:  7: RSpec/ExampleLength: Example has too many lines. [9/5]
+== evally/spec/cypress/app_commands/eval.rb ==
+C:  3:  8: Security/Eval: The use of eval is a serious security risk.
+== evally/spec/models/activity_spec.rb ==
+C: 10:  3: RSpec/ExampleLength: Example has too many lines. [9/5]
+C: 10:  3: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+== evally/spec/models/employee_spec.rb ==
+C: 20:  7: [Correctable] RSpec/ImplicitSubject: Don't use implicit subject.
+== evally/spec/models/evaluation_spec.rb ==
+C:  8:  3: RSpec/ExampleLength: Example has too many lines. [9/5]
+C:  9:  5: [Correctable] RSpec/ImplicitSubject: Don't use implicit subject.
+== evally/spec/models/position_change_spec.rb ==
+C:  5:  1: [Correctable] RSpec/EmptyExampleGroup: Empty example group detected.
+== evally/spec/models/section_spec.rb ==
+C:  8:  3: RSpec/ExampleLength: Example has too many lines. [9/5]
+C:  9:  5: [Correctable] RSpec/ImplicitSubject: Don't use implicit subject.
+C: 20:  3: RSpec/ExampleLength: Example has too many lines. [8/5]
+C: 21:  5: [Correctable] RSpec/ImplicitSubject: Don't use implicit subject.
+C: 39:  8: [Correctable] RSpec/ImplicitExpect: Prefer is_expected.to over should.
+C: 41: 11: RSpec/ContextWording: Context description should match /^when\b/, /^with\b/, or /^without\b/.
+C: 42:  5: RSpec/ExampleLength: Example has too many lines. [12/5]
+C: 45: 16: [Correctable] RSpec/DescribedClass: Use described_class instead of Section.
+C: 50: 16: [Correctable] RSpec/DescribedClass: Use described_class instead of Section.
+C: 55: 16: [Correctable] RSpec/DescribedClass: Use described_class instead of Section.
+== evally/spec/policies/activity_policy_spec.rb ==
+C:  5:  1: RSpec/SpecFilePathFormat: Spec path should end with v2/activity_policy*_spec.rb.
+C:  7:  5: RSpec/ExampleLength: Example has too many lines. [12/5]
+C:  7:  5: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+== evally/spec/policies/employee_policy_spec.rb ==
+C:  5:  1: RSpec/SpecFilePathFormat: Spec path should end with v2/employee_policy*_spec.rb.
+C:  7:  5: RSpec/ExampleLength: Example has too many lines. [12/5]
+C:  7:  5: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+== evally/spec/policies/evaluation_policy_spec.rb ==
+C:  5:  1: RSpec/SpecFilePathFormat: Spec path should end with v2/evaluation_policy*_spec.rb.
+C:  7:  5: RSpec/ExampleLength: Example has too many lines. [14/5]
+C:  7:  5: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+== evally/spec/presenters/v2/drafts_presenter_spec.rb ==
+C:  6:  3: RSpec/ExampleLength: Example has too many lines. [10/5]
+C:  6:  3: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C: 16: 17: [Correctable] RSpec/DescribedClass: Use described_class instead of V2::DraftsPresenter.
+== evally/spec/queries/v2/dashboard_upcoming_query_spec.rb ==
+C:  6:  3: RSpec/ExampleLength: Example has too many lines. [6/5]
+== evally/spec/queries/v2/employees_analytics_query_spec.rb ==
+C:  6:  3: RSpec/ExampleLength: Example has too many lines. [30/5]
+== evally/spec/queries/v2/employees_by_users_chart_query_spec.rb ==
+C:  6:  3: RSpec/ExampleLength: Example has too many lines. [17/5]
+== evally/spec/queries/v2/employees_past_year_chart_query_spec.rb ==
+C:  6:  3: RSpec/ExampleLength: Example has too many lines. [45/5]
+== evally/spec/queries/v2/employees_search_query_spec.rb ==
+C:  6:  3: RSpec/ExampleLength: Example has too many lines. [88/5]
+C:  6:  3: RSpec/MultipleExpectations: Example has too many expectations [5/1].
+C:112:  3: RSpec/ExampleLength: Example has too many lines. [27/5]
+C:147:  3: RSpec/ExampleLength: Example has too many lines. [28/5]
+== evally/spec/queries/v2/evaluations_analytics_query_spec.rb ==
+C:  6:  3: RSpec/ExampleLength: Example has too many lines. [35/5]
+== evally/spec/queries/v2/evaluations_past_year_chart_query_spec.rb ==
+C:  6:  3: RSpec/ExampleLength: Example has too many lines. [31/5]
+== evally/spec/rails_helper.rb ==
+C: 44:  5: [Correctable] Rails/FilePath: Prefer Rails.root.join('path/to').
+C: 56: 25: [Correctable] Rails/FilePath: Prefer Rails.root.join('path/to').
+== evally/spec/services/employee_service/archive_spec.rb ==
+C: 11:  5: [Correctable] RSpec/LeadingSubject: Declare subject above any other let declarations.
+C: 12:  7: [Correctable] RSpec/DescribedClass: Use described_class instead of EmployeeService::Archive.
+C: 17: 14: RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.
+C: 17: 31: [Correctable] RSpec/BeEq: Prefer be over eq.
+C: 21:  7: RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.
+C: 27:  7: RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.
+C: 33:  7: RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.
+C: 35: 47: [Correctable] RSpec/BeEq: Prefer be over eq.
+C: 38: 13: RSpec/ContextWording: Context description should match /^when\b/, /^with\b/, or /^without\b/.
+C: 42:  9: RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.
+C: 48:  9: RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.
+C: 54: 13: RSpec/ContextWording: Context description should match /^when\b/, /^with\b/, or /^without\b/.
+C: 59:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C: 60: 18: RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.
+C: 65:  7: RSpec/MultipleExpectations: Example has too many expectations [2/1].
+C: 66: 18: RSpec/NamedSubject: Name your test subject if you need to reference it explicitly.
+== evally/spec/support/database_cleaner.rb ==
+C: 11:  3: [Correctable] RSpec/HookArgument: Omit the default :each argument for RSpec hooks.
+
+228 files inspected, 609 offenses detected, 370 offenses autocorrectable
